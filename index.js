@@ -1,3 +1,9 @@
+window.addEventListener("load", (prompt) => {
+    let player1Name = prompt("Please provide a name for player 1.", "Enter first player's name here.");
+    document.getElementById("player1Name").innerHTML = player1Name;
+}
+);
+
 document.getElementById("button").addEventListener("click", showChoice);
 
 function getRandom(array) {
@@ -28,7 +34,7 @@ function showPlayer1(randomChoice1) {
 }
 
 function showPlayer2(randomChoice2) {
-  let showp2 = (document.getElementById("p2choice").innerHTML = randomChoice2);
+  document.getElementById("p2choice").innerHTML = randomChoice2;
 }
 
 function resetChoice(show) {
